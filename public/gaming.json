@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "SPACE WARS",
+        "image": "https://i.ibb.co/PTthyd5/spacewars.jpg",
+        "price": 19.99,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget libero et felis vehicula iaculis."
+    },
+    {
+        "id": 2,
+        "title": "RETURN OF THE CARS",
+        "image": "https://i.ibb.co/PCG2zF2/cars.jpg",
+        "price": 29.99,
+        "description": "Suspendisse auctor nulla id hendrerit ultrices. Proin eget placerat risus. Vestibulum non volutpat neque."
+    },
+    {
+        "id": 3,
+        "title": "PLANS OF GLORIA",
+        "image": "https://i.ibb.co/Mn2GbT1/plans.jpg",
+        "price": 39.99,
+        "description": "Fusce non dapibus elit, nec tristique nisi. Nulla facilisi. Curabitur euismod ultrices quam, nec eleifend est rutrum a."
+    },
+    {
+        "id": 4,
+        "title": "EARTH WARS: HISTORY",
+        "image": "https://i.ibb.co/5673HgV/earthwars.jpg",
+        "price": 49.99,
+        "description": "Praesent non mattis justo. Sed eu orci eget enim bibendum aliquam. Integer fermentum odio non mattis aliquam."
+    },
+    {
+        "id": 5,
+        "title": "THE WARRIOR",
+        "image": "https://i.ibb.co/7vJLnzV/warriors.jpg",
+        "price": 59.99,
+        "description": "Donec in consequat massa. Sed at felis nec elit vehicula volutpat. Sed vel vehicula elit, id venenatis purus."
+    },
+    {
+        "id": 6,
+        "title": "LIFE AND STRUGGLE",
+        "image": "https://i.ibb.co/26RqvzP/struggle.jpg",
+        "price": 69.99,
+        "description": "Vivamus a semper nisi. Curabitur malesuada, libero ut cursus malesuada, dolor libero pharetra mi, et aliquam elit mi at dui."
+    },
+    {
+        "id": 7,
+        "title": "SOCCER 2023",
+        "image": "https://i.ibb.co/JcqJ3ft/soccer.jpg",
+        "price": 79.99,
+        "description": "Mauris quis velit in ex mattis volutpat. Sed eget bibendum odio. Nullam tincidunt vitae quam eu rhoncus."
+    },
+    {
+        "id": 8,
+        "title": "EGYPT AND WORLD",
+        "image": "https://i.ibb.co/znmVKWR/egypts.jpg",
+        "price": 89.99,
+        "description": "Aenean nec justo quis purus dignissim congue. Suspendisse potenti. Sed auctor mi at justo feugiat bibendum."
+    }
+]
