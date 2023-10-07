@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const EventsCard = ({ game }) => {
 
-  const { title, image, description, id } = game;
+  const { title, image, description, id, price } = game;
 
   return (
     <div className="card shadow-2xl bg-fuchsia-100 ">
@@ -22,7 +22,7 @@ const EventsCard = ({ game }) => {
         )}
 
         <div className="card-actions">
-          <Link to={`/game/${id}`}><button className="btn btn-secondary btn-outline text-base text-fuchsia-600 w-36">Entry</button></Link>
+          <Link to={`/game/${id}`}><button className="btn btn-secondary btn-outline text-base text-fuchsia-600 w-44">Entry Fee ${price}</button></Link>
         </div>
       </div>
     </div>

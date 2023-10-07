@@ -5,7 +5,7 @@
         "location":"Los Angeles, USA",
         "title": "Keighley’s Summer Game Fest",
         "image": "https://i.ibb.co/z7yytc5/summer.jpg",
-        "price": 19.99,
+        "price": 199,
         "description": "Launched in 2020, Geoff Keighley’s Summer Game Fest is a relatively new gaming event, offering gamers a glimpse into things to come from the industry. Over the last few years, the event has seen some big reveals, such as a game play trailer for Elden Ring. This year’s Summer Game Fest will be held at the YouTube Theater in California and feature big names in the industry."
     },
     {
@@ -14,7 +14,7 @@
         "location":"Los Angeles, USA",
         "title": "Microsoft’s Xbox Games Showcase",
         "image": "https://i.ibb.co/5511Npn/xbox.jpg",
-        "price": 29.99,
+        "price": 129,
         "description": "Another event that’s being live-streamed, the Xbox Games Showcase is sure to cover a range of interesting things for game-focused fans. Last year’s showcase event brought with it Starfield gameplay in addition to a ton of game-related news. While not much has been revealed on what to expect from this year’s Xbox Games Showcase, Microsoft has said that fans can expect some “first-looks” from the company’s internal studios."
     },
     {
@@ -23,7 +23,7 @@
         "location":"Los Angeles, USA",
         "title": "Ubisoft Forward Live",
         "image": "https://i.ibb.co/1rxZ149/ubisoft.jpg",
-        "price": 39.99,
+        "price": 139,
         "description": "At 2022’s Ubisoft Forward event, which was held in September, the company showcased some Skull and Bones game play, unveiled Assassin’s Creed Mirage, and revealed a new season of The Division 2, among a host of other announcements. So this year’s Ubisoft Forward is bound to be interesting. Maybe we’ll find out more about the Assassin’s Creed title that takes players to feudal Japan."
     },
     {
@@ -32,7 +32,7 @@
         "location":"San Francisco, USA",
         "title": "GDC Showcase",
         "image": "https://i.ibb.co/rbb5pVh/gdc.jpg",
-        "price": 49.99,
+        "price": 149,
         "description": "The Game Developers Conference (GDC) is held in March every year, but the GDC Showcase is a digital-only event being held in June to allow video game developers to connect and share ideas. We may not see too many reveals and announcements at this event, since it’s geared mainly for developers, but it is possible that gaming audiences will get something out of it.This year’s event will have talks, Q&A sessions, and developers breaking down their games, analyzing the style, art, music, and much more that it takes to make successful video games."
     },
     {
@@ -41,7 +41,7 @@
         "location":"Sao Paolo, Brazil",
         "title": "Best International Game Festival",
         "image": "https://i.ibb.co/SJw1vyT/big.png",
-        "price": 59.99,
+        "price": 178,
         "description": "The Best International Games Festival (BIG Festival) has been held since 2012. This year there’ll be hands-on events where attendees can play games by big-name publishers from all over the world. Game developers will be interacting with the audience, so there’s bound to be something interesting to come out of it. This year, expect workshops, keynote speeches and more from the festival."
     },
     {
@@ -50,7 +50,7 @@
         "location":"Kyoto, Japan",
         "title": "BitSummit Let’s Go!!",
         "image": "https://i.ibb.co/PWXSCQZ/bitsummit.jpg",
-        "price": 69.99,
+        "price": 180,
         "description": "The 2023 edition of BitSummit is titled BitSummit Let’s Go!! and it’s open to the public. To be held over three days in Kyoto, Japan, the show will host publishers from outside the country thanks to relaxed travel restrictions. Video game fans will also be able to participate online via the BitSummit Discord channel. And, the event will be made available for viewing online via BitSummit’s YouTube, Twitch, and TikTok channels."
     }
 ]

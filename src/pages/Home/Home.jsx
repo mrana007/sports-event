@@ -6,7 +6,7 @@ import EventsCard from "./eventsCard";
 const Home = () => {
 
     const games = useLoaderData();
-    console.log(games);
+    // console.log(games);
 
     return (
         <div>
