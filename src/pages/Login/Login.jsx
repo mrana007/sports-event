@@ -6,7 +6,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
 
-    const {login} = useContext(AuthContext);
+    const {login, signInWithGoogle} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
     // console.log(location);
@@ -24,6 +24,16 @@ const Login = () => {
 
             navigate(location?.state ? location.state : '/');
 
+        })
+        .catch(error =>{
+            console.error(error);
+        })
+    }
+
+    const handleGoogleSignIn =() =>{
+        signInWithGoogle()
+        .then(result =>{
+            console.log(result.user);
         })
         .catch(error =>{
             console.error(error);
@@ -54,6 +64,9 @@ const Login = () => {
           <button className="btn bg-fuchsia-700 normal-case text-white font-semibold text-2xl">Login</button>
         </div>
             </form>
+            <div className="pt-4 pl-12">
+          <button onClick={handleGoogleSignIn} className="btn btn-outline text-fuchsia-600 normal-case font-semibold text-2xl">Google</button>
+        </div>
             <p className="text-center mt-4 pb-4">Do not Have An Account ? <Link to='/register' className="font-extrabold text-blue-600">Register</Link></p>
             </div>
         </div>
