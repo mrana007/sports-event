@@ -5,13 +5,11 @@ const Banner = () => {
       style={{ backgroundImage: "url(https://i.ibb.co/gvWN3pm/banner.jpg" }}
     >
       <div className="hero-overlay bg-opacity-50"></div>
-      <div className="hero-content text-center text-neutral-content">
+      <div className="hero-content text-left text-neutral-content">
         <div className="">
-          <h1 className="mb-5 text-5xl font-bold">Online Gaming</h1>
-          <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+          <h1 className="mb-5 text-5xl font-extrabold">Video <span className="text-fuchsia-600">Gam</span>ing Event</h1>
+          <p className="mb-5 w-1/2 text-green-200">
+          There are a few other video game events and showcases you can attend or follow online to get your yearly fix of video game news and excitement.
           </p>
         </div>
       </div>
