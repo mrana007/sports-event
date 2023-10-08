@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
-import { updateProfile } from "firebase/auth";
+import { signOut, updateProfile } from "firebase/auth";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -14,7 +14,6 @@ const Register = () => {
     const [success, setSuccess] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     const {createUser} = useContext(AuthContext);
-    // const navigate =  useNavigate();
 
     const handleRegister = e =>{
         e.preventDefault();
@@ -39,8 +38,9 @@ const Register = () => {
         // create user
         createUser(email, password)
         .then(result =>{
-            // console.log(result.user);
-            toast.success("User created successfully")
+            console.log(result.user);
+            setSuccess(toast.success("User created successfully"))
+            signOut();
             // navigate("/login");
 
             // update profile
@@ -58,7 +58,7 @@ const Register = () => {
         })
         .catch(error => {
             console.error(error);
-            toast.error("User already registered");
+            setRegisterError(toast.error("User already registered"));
         })
     }
 

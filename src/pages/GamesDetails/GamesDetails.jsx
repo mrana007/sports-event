@@ -10,7 +10,7 @@ const GamesDetails = () => {
     const {id} = useParams();
 
     return (
-        <div>
+        <div  className="max-w-7xl mx-auto">
             {
                 games?.map( game => game?.id == id ? <GameDetails key={game.id} eventDetails={game}></GameDetails> : '')
             }
