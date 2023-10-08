@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import EventsCard from "./eventsCard";
+import FeaturedGame from "./FeaturedGame";
 
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
                 }
             </div>
             </div>
-            
+            <FeaturedGame></FeaturedGame>
         </div>
     );
 };

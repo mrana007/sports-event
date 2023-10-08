@@ -1,11 +1,11 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
-
-
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { ToastContainer, toast } from "react-toastify";
 
 const Login = () => {
-
+    const[showPassword, setShowPassword] = useState(false)
     const {login, signInWithGoogle} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
@@ -21,12 +21,12 @@ const Login = () => {
         login(email, password)
         .then(result => {
             console.log(result.user);
-
+            toast.success("User Login successfully");
             navigate(location?.state ? location.state : '/');
 
         })
         .catch(error =>{
-            console.error(error);
+            toast.warning(error.message);
         })
     }
 
@@ -34,6 +34,7 @@ const Login = () => {
         signInWithGoogle()
         .then(result =>{
             console.log(result.user);
+            navigate(location?.state ? location.state : '/');
         })
         .catch(error =>{
             console.error(error);
@@ -55,7 +56,12 @@ const Login = () => {
           <label className="label">
             <span className="label-text">Password</span>
           </label>
-          <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+          <div className="relative input input-bordered">
+            <input type={showPassword ? "text" : "password"} name="password" placeholder="password" className="pt-2" required />
+            <span className="absolute top-3 right-3" onClick={ () => setShowPassword(!showPassword)}>
+                {showPassword ? <FaEyeSlash/> : <FaEye/>}
+            </span>
+            </div>
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>
@@ -64,11 +70,12 @@ const Login = () => {
           <button className="btn bg-fuchsia-700 normal-case text-white font-semibold text-2xl">Login</button>
         </div>
             </form>
-            <div className="pt-4 pl-12">
-          <button onClick={handleGoogleSignIn} className="btn btn-outline text-fuchsia-600 normal-case font-semibold text-2xl">Google</button>
+        <div className="form-control pt-4 px-12">
+          <button onClick={handleGoogleSignIn} className="btn btn-outline text-fuchsia-600 normal-case font-semibold text-2xl">Login with Google</button>
         </div>
             <p className="text-center mt-4 pb-4">Do not Have An Account ? <Link to='/register' className="font-extrabold text-blue-600">Register</Link></p>
             </div>
+            <ToastContainer/>
         </div>
     );
 };

@@ -5,6 +5,7 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import GamesDetails from "../pages/GamesDetails/GamesDetails";
 import PrivateRoute from "./PrivateRoute";
+import FeaturedGame from "../pages/Home/FeaturedGame";
 
 
 
@@ -22,6 +23,11 @@ const router = createBrowserRouter ([
                 path: '/game/:id',
                 element: <PrivateRoute><GamesDetails></GamesDetails></PrivateRoute>,
                 loader: () => fetch('/games.json')
+            },
+            {
+                path: '/feature',
+                element: <FeaturedGame></FeaturedGame>,
+                
             },
             {
                 path: '/login',
