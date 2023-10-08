@@ -4,8 +4,10 @@ import { AuthContext } from "../../providers/AuthProvider";
 import {  updateProfile } from "firebase/auth";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import swal from 'sweetalert';
+
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -24,7 +26,10 @@ const Register = () => {
         const passwordValidation = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
 
         if(!passwordValidation.test(password)){
-            toast.warning("Password required must be minimum six characters, at least one uppercase letter, one lowercase letter and one special character.");
+
+            swal("Oops!", "Password required must be minimum six characters, at least one uppercase letter, one lowercase letter and one special character", "error");
+            
+            // toast.warning("Password required must be minimum six characters, at least one uppercase letter, one lowercase letter and one special character.");
             return;
         }
 
@@ -32,8 +37,9 @@ const Register = () => {
         createUser(email, password)
         .then(result =>{
             console.log(result.user);
+            swal("Congrats!", "User created successfully!", "success");
             
-            toast.success("User created successfully");
+            // toast.success("User created successfully");
             logOut();
 
             // update profile
@@ -51,8 +57,8 @@ const Register = () => {
         })
         .catch(error => {
             console.error(error);
-            
-            toast.warning("User already registered");
+            swal("Warning!", "User already registered", "warning");
+            // toast.warning("User already registered");
         })
     }
 
@@ -97,7 +103,7 @@ const Register = () => {
             <p className="text-center mt-4 pb-4">Already Have An Account ? <Link to='/login' className="font-extrabold text-blue-600">Login</Link>
             </p>
             </div>
-            <ToastContainer/>
+            {/* <ToastContainer/> */}
         </div>
     );
 };

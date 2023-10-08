@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { FcGoogle } from "react-icons/fc";
-import { ToastContainer, toast } from "react-toastify";
+// import { ToastContainer, toast } from "react-toastify";
 import swal from 'sweetalert';
 
 const Login = () => {
@@ -21,13 +21,14 @@ const Login = () => {
         login(email, password)
         .then(result => {
             console.log(result.user);
-            swal("User Login successfully");
+            swal("Wow!", "Login successfully", "success");
             navigate(location?.state ? location.state : '/');
 
         })
         .catch(error =>{
             
-           (error.message);
+           console.error(error);
+           swal("Warning","Wrong Login information", "warning");
         })
     }
 
@@ -76,7 +77,6 @@ const Login = () => {
         </div>
             <p className="text-center mt-4 pb-4">Do not Have An Account ? <Link to='/register' className="font-extrabold text-blue-600">Register</Link></p>
             </div>
-            <ToastContainer/>
         </div>
     );
 };
