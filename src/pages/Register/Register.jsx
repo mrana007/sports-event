@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
-import { signOut, updateProfile } from "firebase/auth";
+import {  updateProfile } from "firebase/auth";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -10,28 +10,21 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Register = () => {
-    const [registerError, setRegisterError] = useState('');
-    const [success, setSuccess] = useState('');
     const [showPassword, setShowPassword] = useState(false);
-    const {createUser} = useContext(AuthContext);
+    const {createUser, logOut} = useContext(AuthContext);
 
     const handleRegister = e =>{
         e.preventDefault();
-        console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
         const name = form.get('name');
         const photo = form.get('photo');
         const email = form.get('email');
         const password = form.get('password');
-        // console.log(name, email, password);
 
-        // reset error & success
-        setRegisterError('');
-        setSuccess('');
         const passwordValidation = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
 
         if(!passwordValidation.test(password)){
-            setRegisterError(toast("Password required must be minimum six characters, at least one uppercase letter, one lowercase letter and one special character."));
+            toast.warning("Password required must be minimum six characters, at least one uppercase letter, one lowercase letter and one special character.");
             return;
         }
 
@@ -39,9 +32,9 @@ const Register = () => {
         createUser(email, password)
         .then(result =>{
             console.log(result.user);
-            setSuccess(toast.success("User created successfully"))
-            signOut();
-            // navigate("/login");
+            
+            toast.success("User created successfully");
+            logOut();
 
             // update profile
             updateProfile(result.user,{
@@ -58,7 +51,8 @@ const Register = () => {
         })
         .catch(error => {
             console.error(error);
-            setRegisterError(toast.error("User already registered"));
+            
+            toast.warning("User already registered");
         })
     }
 
@@ -102,12 +96,6 @@ const Register = () => {
             </form>
             <p className="text-center mt-4 pb-4">Already Have An Account ? <Link to='/login' className="font-extrabold text-blue-600">Login</Link>
             </p>
-            {
-                registerError && <p className="text-red-500 text-center">{registerError}</p>
-            }
-             {
-                success && <p className="text-green-400 text-center">{success}</p>
-            }     
             </div>
             <ToastContainer/>
         </div>

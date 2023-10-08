@@ -4,7 +4,7 @@ const FeaturedGame = () => {
     return (
         <div className="max-w-7xl mx-auto p-4">
             <h2 className="text-3xl text-center my-8 text-fuchsia-700 font-extrabold">Featured Games</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 bg-fuchsia-300 rounded-lg shadow-2xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 rounded-lg shadow-2xl">
                 {/* first card */}
             <div className="relative grid h-[38rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
   <div className="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://i.ibb.co/gVTs84F/cyberpunk-portrait-flying-men-outdoors.jpg')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">

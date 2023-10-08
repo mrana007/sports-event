@@ -1,8 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import EventsCard from "./eventsCard";
-import FeaturedGame from "./FeaturedGame";
 import ContactUs from "./ContactUs";
+import UserReview from "../UserReview";
 
 
 const Home = () => {
@@ -21,8 +21,8 @@ const Home = () => {
                 }
             </div>
             </div>
-            <FeaturedGame></FeaturedGame>
             <ContactUs></ContactUs>
+            <UserReview></UserReview>
         </div>
     );
 };

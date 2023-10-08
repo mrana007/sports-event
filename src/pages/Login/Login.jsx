@@ -2,18 +2,18 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { FcGoogle } from "react-icons/fc";
 import { ToastContainer, toast } from "react-toastify";
+import swal from 'sweetalert';
 
 const Login = () => {
     const[showPassword, setShowPassword] = useState(false)
     const {login, signInWithGoogle} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
-    // console.log(location);
 
     const handleLogin = e =>{
         e.preventDefault();
-        console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
         const email = form.get('email');
         const password = form.get('password');
@@ -21,12 +21,13 @@ const Login = () => {
         login(email, password)
         .then(result => {
             console.log(result.user);
-            toast.success("User Login successfully");
+            swal("User Login successfully");
             navigate(location?.state ? location.state : '/');
 
         })
         .catch(error =>{
-            toast.warning(error.message);
+            
+           (error.message);
         })
     }
 
@@ -71,7 +72,7 @@ const Login = () => {
         </div>
             </form>
         <div className="form-control pt-4 px-12">
-          <button onClick={handleGoogleSignIn} className="btn btn-outline text-fuchsia-600 normal-case font-semibold text-2xl">Login with Google</button>
+          <button onClick={handleGoogleSignIn} className="btn btn-outline text-fuchsia-600 normal-case font-semibold text-2xl"><FcGoogle/> Login with Google</button>
         </div>
             <p className="text-center mt-4 pb-4">Do not Have An Account ? <Link to='/register' className="font-extrabold text-blue-600">Register</Link></p>
             </div>

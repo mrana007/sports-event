@@ -1,7 +1,7 @@
 import { CiMail, CiPhone, CiLocationOn } from "react-icons/ci";
 const ContactUs = () => {
   return (
-    <div className="max-w-7xl mx-auto p-4 my-16 bg-fuchsia-100 rounded-lg">
+    <div className="max-w-7xl mx-auto p-4 my-16 bg-base-300 rounded-lg">
         <h2 className="text-3xl text-center my-8 text-fuchsia-700 font-extrabold">Contact Us</h2>
       <div className="hero">
   <div className="hero-content flex-col md:flex-row justify-between">

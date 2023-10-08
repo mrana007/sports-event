@@ -8,6 +8,7 @@ import PrivateRoute from "./PrivateRoute";
 import FeaturedGame from "../pages/Home/FeaturedGame";
 import ContactUs from "../pages/Home/ContactUs";
 import Blog from "../pages/Blog/Blog";
+import UserReview from "../pages/UserReview";
 
 
 
@@ -32,7 +33,12 @@ const router = createBrowserRouter ([
             },
             {
                 path: '/feature',
-                element: <FeaturedGame></FeaturedGame>,
+                element: <PrivateRoute><FeaturedGame></FeaturedGame></PrivateRoute>,
+                
+            },
+            {
+                path: '/review',
+                element: <UserReview></UserReview>,
                 
             },
             {
