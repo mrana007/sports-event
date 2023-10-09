@@ -9,6 +9,7 @@ import FeaturedGame from "../pages/Home/FeaturedGame";
 import ContactUs from "../pages/Home/ContactUs";
 import Blog from "../pages/Blog/Blog";
 import UserReview from "../pages/UserReview";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 
 
@@ -16,6 +17,7 @@ const router = createBrowserRouter ([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',

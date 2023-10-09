@@ -1,5 +1,5 @@
 # Featured of Sports Event
-# Project live link: 
+# Project live link: https://sports-event-4243b.web.app/
 
 - In this project having a navbar including Home routes and two private route and a dynamic login and logout button
 - There are six sports events. Each events having title, description and entry fees.
