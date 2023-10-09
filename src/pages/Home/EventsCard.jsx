@@ -6,7 +6,8 @@ const EventsCard = ({ game }) => {
   const { title, image, description, id, price } = game;
 
   return (
-    <div className="card shadow-2xl bg-fuchsia-100 ">
+    <div className="card shadow-2xl bg-fuchsia-100" data-aos="zoom-in-down" data-aos-easing="linear"
+    data-aos-duration="1500">
         
       <figure className="px-10 pt-8">
         <img src={image} alt="Shoes" className="rounded-xl w-80 h-48" />

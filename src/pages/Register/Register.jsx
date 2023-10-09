@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import {  updateProfile } from "firebase/auth";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-
 import swal from 'sweetalert';
-
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -26,10 +22,7 @@ const Register = () => {
         const passwordValidation = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
 
         if(!passwordValidation.test(password)){
-
             swal("Oops!", "Password required must be minimum six characters, at least one uppercase letter, one lowercase letter and one special character", "error");
-            
-            // toast.warning("Password required must be minimum six characters, at least one uppercase letter, one lowercase letter and one special character.");
             return;
         }
 
@@ -38,8 +31,6 @@ const Register = () => {
         .then(result =>{
             console.log(result.user);
             swal("Congrats!", "User created successfully!", "success");
-            
-            // toast.success("User created successfully");
             logOut();
 
             // update profile
@@ -58,13 +49,12 @@ const Register = () => {
         .catch(error => {
             console.error(error);
             swal("Warning!", "User already registered", "warning");
-            // toast.warning("User already registered");
         })
     }
 
     return (
         <div>
-            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-fuchsia-200 mx-auto mb-8">
+            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-fuchsia-200 mx-auto mb-8" data-aos="fade-down">
                 <h2 className="text-3xl my-6 text-center font-bold">Register your account</h2>
             <form onSubmit={handleRegister} className="w-3/4 mx-auto">
                 <div className="form-control">
@@ -103,7 +93,6 @@ const Register = () => {
             <p className="text-center mt-4 pb-4">Already Have An Account ? <Link to='/login' className="font-extrabold text-blue-600">Login</Link>
             </p>
             </div>
-            {/* <ToastContainer/> */}
         </div>
     );
 };

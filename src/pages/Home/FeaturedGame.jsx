@@ -6,7 +6,8 @@ const FeaturedGame = () => {
             <h2 className="text-3xl text-center my-8 text-fuchsia-700 font-extrabold">Featured Games</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 rounded-lg shadow-2xl">
                 {/* first card */}
-            <div className="relative grid h-[38rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
+            <div className="relative grid h-[38rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700" data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="1500">
   <div className="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://i.ibb.co/gVTs84F/cyberpunk-portrait-flying-men-outdoors.jpg')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
     <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50"></div>
   </div>
@@ -28,7 +29,8 @@ const FeaturedGame = () => {
   </div>
             </div>
                 {/* 2nd card */}
-            <div className="relative grid h-[38rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
+            <div className="relative grid h-[38rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700" data-aos="fade-up" data-aos-easing="linear"
+      data-aos-duration="1500">
   <div className="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://i.ibb.co/JR6pZmk/army-soldiers-fighting-with-guns-defending-their-country.jpg')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
     <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50"></div>
   </div>
@@ -50,7 +52,8 @@ const FeaturedGame = () => {
   </div>
     </div>
                 {/* third card */}
-    <div className="relative grid h-[38rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
+    <div className="relative grid h-[38rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700" data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="1500">
   <div className="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://i.ibb.co/CbBkkhj/41528.jpg')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
     <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50"></div>
   </div>
@@ -72,7 +75,8 @@ const FeaturedGame = () => {
   </div>
         </div>
                 {/* fourth card */}
-        <div className="relative grid h-[38rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
+        <div className="relative grid h-[38rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700" data-aos="fade-up" data-aos-easing="linear"
+      data-aos-duration="1500">
   <div className="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://i.ibb.co/GQBTQSj/colombian-national-soccer-team.jpg')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
     <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50"></div>
   </div>

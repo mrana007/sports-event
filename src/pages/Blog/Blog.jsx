@@ -6,7 +6,8 @@ const Blog = () => {
             <h2 className="text-5xl pb-10 text-center my-8 text-fuchsia-700 font-extrabold"> Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* first card */}
-            <div className="relative flex flex-col md:flex-row w-full rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div className="relative flex flex-col md:flex-row w-full rounded-xl bg-white bg-clip-border text-gray-700 shadow-md" data-aos="zoom-in" data-aos-easing="linear"
+      data-aos-duration="1000">
   <div className="relative m-0 md:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
     <img
       src="https://i.ibb.co/1dVk0LW/concentrated-man-sitting-home-indoors-play-games.jpg"
@@ -36,7 +37,8 @@ const Blog = () => {
   </div>
             </div>
                 {/* second card */}
-            <div className="relative flex flex-col md:flex-row w-full rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div className="relative flex flex-col md:flex-row w-full rounded-xl bg-white bg-clip-border text-gray-700 shadow-md" data-aos="zoom-in-up" data-aos-easing="linear"
+      data-aos-duration="1000">
   <div className="relative m-0 md:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
     <img
       src="https://i.ibb.co/HXPShNT/high-angle-controller-gaming-chair.jpg"
@@ -66,7 +68,8 @@ const Blog = () => {
   </div>
             </div>
                 {/* third card */}
-            <div className="relative flex flex-col md:flex-row w-full rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div className="relative flex flex-col md:flex-row w-full rounded-xl bg-white bg-clip-border text-gray-700 shadow-md" data-aos="zoom-in" data-aos-easing="linear"
+      data-aos-duration="1000">
   <div className="relative m-0 md:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
     <img
       src="https://i.ibb.co/sJLkKCB/2150165731.jpg"
@@ -96,7 +99,8 @@ const Blog = () => {
   </div>
             </div>
                 {/* fourth card */}
-            <div className="relative flex flex-col md:flex-row w-full rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div className="relative flex flex-col md:flex-row w-full rounded-xl bg-white bg-clip-border text-gray-700 shadow-md" data-aos="zoom-in-up" data-aos-easing="linear"
+      data-aos-duration="1000">
   <div className="relative m-0 md:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
     <img
       src="https://i.ibb.co/D1ZkYhz/side-view-gamer-playing-laptop.jpg"
@@ -126,7 +130,8 @@ const Blog = () => {
   </div>
             </div>
                 {/* fifth card */}
-            <div className="relative flex flex-col md:flex-row w-full rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div className="relative flex flex-col md:flex-row w-full rounded-xl bg-white bg-clip-border text-gray-700 shadow-md" data-aos="zoom-in" data-aos-easing="linear"
+      data-aos-duration="1000">
   <div className="relative m-0 md:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
     <img
       src="https://i.ibb.co/P692KpN/still-life-seat-gamers.jpg"
@@ -156,7 +161,8 @@ const Blog = () => {
   </div>
             </div>
                 {/* sixth card */}
-            <div className="relative flex flex-col md:flex-row w-full rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div className="relative flex flex-col md:flex-row w-full rounded-xl bg-white bg-clip-border text-gray-700 shadow-md" data-aos="zoom-in-up" data-aos-easing="linear"
+      data-aos-duration="1000">
   <div className="relative m-0 md:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
     <img
       src="https://i.ibb.co/ZTkHpjb/winner-concept-with-golden-helmet.jpg"

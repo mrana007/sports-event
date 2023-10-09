@@ -1,12 +1,12 @@
 
-
 const UserReview = () => {
     return (
         <div className="max-w-7xl mx-auto bg-fuchsia-100 p-8 rounded-lg my-14">
             <h2 className="text-3xl text-center my-8 text-fuchsia-700 font-extrabold">User Review</h2>
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
             {/* 1st card */}
-            <div className="relative flex w-full  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-none p-4">
+            <div className="relative flex w-full  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-none p-4" data-aos="zoom-in-up" data-aos-easing="linear"
+      data-aos-duration="1000">
   <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
     <img
       src="https://i.ibb.co/DWn7vrd/confident-attractive-caucasian-guy-beige-pullon-smiling-broadly-while-standing-against-gray.jpg"
@@ -16,7 +16,7 @@ const UserReview = () => {
     <div className="flex w-full flex-col gap-0.5">
       <div className="flex items-center justify-between">
         <h5 className="block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-          Tania Andrew
+        Ryan Parker
         </h5>
         <div className="5 flex items-center gap-0">
         <div className="rating">
@@ -29,7 +29,7 @@ const UserReview = () => {
         </div>
       </div>
       <p className="block font-sans text-base font-light leading-relaxed text-blue-gray-900 antialiased">
-      October 9, 2023
+      September 19, 2023
       </p>
     </div>
   </div>
@@ -39,8 +39,9 @@ const UserReview = () => {
     </p>
   </div>
 </div>
-            {/* 1st card */}
-            <div className="relative flex w-full  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-none p-4">
+            {/* 2nd card */}
+            <div className="relative flex w-full  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-none p-4" data-aos="zoom-in-up" data-aos-easing="linear"
+      data-aos-duration="1000">
   <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
     <img
       src="https://i.ibb.co/vjgrnjv/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction.jpg"
@@ -63,7 +64,7 @@ const UserReview = () => {
         </div>
       </div>
       <p className="block font-sans text-base font-light leading-relaxed text-blue-gray-900 antialiased">
-      October 9, 2023, 3:15 PM
+      September 21, 2023
       </p>
     </div>
   </div>
@@ -74,7 +75,8 @@ const UserReview = () => {
   </div>
 </div>
             {/* 3rd card */}
-            <div className="relative flex w-full  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-none p-4">
+            <div className="relative flex w-full  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-none p-4" data-aos="zoom-in-up" data-aos-easing="linear"
+      data-aos-duration="1000">
   <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
     <img
       src="https://i.ibb.co/dchwVVC/young-bearded-man-with-striped-shirt.jpg"
@@ -84,7 +86,7 @@ const UserReview = () => {
     <div className="flex w-full flex-col gap-0.5">
       <div className="flex items-center justify-between">
         <h5 className="block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-          Tania Andrew
+        Alexander Martin
         </h5>
         <div className="5 flex items-center gap-0">
         <div className="rating">
@@ -97,7 +99,7 @@ const UserReview = () => {
         </div>
       </div>
       <p className="block font-sans text-base font-light leading-relaxed text-blue-gray-900 antialiased">
-      October 9, 2023, 3:15 PM
+      September 22, 2023
       </p>
     </div>
   </div>
@@ -108,7 +110,8 @@ const UserReview = () => {
   </div>
 </div>
             {/* 4th card */}
-            <div className="relative flex w-full  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-none p-4">
+            <div className="relative flex w-full  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-none p-4" data-aos="zoom-in-down" data-aos-easing="linear"
+      data-aos-duration="1000">
   <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
     <img
       src="https://i.ibb.co/Bzhg2Ys/indoor-picture-cheerful-handsome-young-man-having-folded-hands-looking-directly-smiling-sincerely-we.jpg"
@@ -118,8 +121,8 @@ const UserReview = () => {
     <div className="flex w-full flex-col gap-0.5">
       <div className="flex items-center justify-between">
         <h5 className="block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-          Tania Andrew
-        </h5>
+        Benjamin Williams
+        </h5> 
         <div className="5 flex items-center gap-0">
         <div className="rating">
   <input type="radio" name="rating-2" className="mask mask-star-2 bg-fuchsia-500" />
@@ -131,7 +134,7 @@ const UserReview = () => {
         </div>
       </div>
       <p className="block font-sans text-base font-light leading-relaxed text-blue-gray-900 antialiased">
-      October 14, 2023, 3:15 PM
+      September 28, 2023
       </p>
     </div>
   </div>
@@ -142,7 +145,8 @@ const UserReview = () => {
   </div>
 </div>
             {/* 5th card */}
-            <div className="relative flex w-full  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-none p-4">
+            <div className="relative flex w-full  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-none p-4" data-aos="zoom-in-down" data-aos-easing="linear"
+      data-aos-duration="1000">
   <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
     <img
       src="https://i.ibb.co/DGCK63R/middle-aged-cheerful-dark-skinned-male-with-shining-smile.jpg"
@@ -152,7 +156,7 @@ const UserReview = () => {
     <div className="flex w-full flex-col gap-0.5">
       <div className="flex items-center justify-between">
         <h5 className="block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-          Tania Andrew
+        David Johnson
         </h5>
         <div className="5 flex items-center gap-0">
         <div className="rating">
@@ -165,7 +169,7 @@ const UserReview = () => {
         </div>
       </div>
       <p className="block font-sans text-base font-light leading-relaxed text-blue-gray-900 antialiased">
-      October 18, 2023, 3:15 PM
+      October 2, 2023
       </p>
     </div>
   </div>
@@ -177,7 +181,8 @@ const UserReview = () => {
   </div>
 </div>
             {/* 6th card */}
-            <div className="relative flex w-full  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-none p-4">
+            <div className="relative flex w-full  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-none p-4" data-aos="zoom-in-down" data-aos-easing="linear"
+      data-aos-duration="1000">
   <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
     <img
       src="https://i.ibb.co/SfV77Lt/curly-man-with-broad-smile-shows-perfect-teeth-being-amused-by-interesting-talk-has-bushy-curly-dark.jpg"
@@ -187,7 +192,7 @@ const UserReview = () => {
     <div className="flex w-full flex-col gap-0.5">
       <div className="flex items-center justify-between">
         <h5 className="block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-          Tania Andrew
+        Christopher Davis
         </h5>
         <div className="5 flex items-center gap-0">
         <div className="rating">
@@ -200,7 +205,7 @@ const UserReview = () => {
         </div>
       </div>
       <p className="block font-sans text-base font-light leading-relaxed text-blue-gray-900 antialiased">
-      October 28, 2023, 3:15 PM
+      October 6, 2023
       </p>
     </div>
   </div>
