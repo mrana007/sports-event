@@ -19,14 +19,14 @@ const Login = () => {
         login(email, password)
         .then(result => {
             console.log(result.user);
-            swal("Wow!", "Login successfully", "success");
+            swal("Login successfully", "", "success");
             navigate(location?.state ? location.state : '/');
 
         })
         .catch(error =>{
             
            console.error(error);
-           swal("Warning","Wrong Login information", "warning");
+           swal("Wrong user information", "", "warning");
         })
     }
 

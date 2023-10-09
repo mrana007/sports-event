@@ -22,7 +22,7 @@ const Register = () => {
         const passwordValidation = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
 
         if(!passwordValidation.test(password)){
-            swal("Oops!", "Password required must be minimum six characters, at least one uppercase letter, one lowercase letter and one special character", "error");
+            swal("Password required minimum six characters, at least one uppercase and one lowercase letter and one special (@$!%*?&) character", "", "error");
             return;
         }
 
@@ -30,7 +30,7 @@ const Register = () => {
         createUser(email, password)
         .then(result =>{
             console.log(result.user);
-            swal("Congrats!", "User created successfully!", "success");
+            swal("User created successfully!", "", "success");
             logOut();
 
             // update profile
@@ -48,7 +48,7 @@ const Register = () => {
         })
         .catch(error => {
             console.error(error);
-            swal("Warning!", "User already registered", "warning");
+            swal("User already registered", "", "warning");
         })
     }
 

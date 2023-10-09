@@ -1,6 +1,5 @@
 import { FaTwitter, FaYoutube, FaFacebookF, FaInstagram } from 'react-icons/fa';
 
-
 const Footer = () => {
     return (
         <footer className="footer footer-center p-10 bg-black text-white rounded">
