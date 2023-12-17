@@ -1,5 +1,32 @@
+import { useRef } from "react";
+import toast from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 import { CiMail, CiPhone, CiLocationOn } from "react-icons/ci";
 const ContactUs = () => {
+
+  const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ac9ctjn",
+        "template_cnrcrvj",
+        form.current,
+        "LtFPszaepLXoWwmhR"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          form.current.reset();
+          toast.success("Message Sent Successfully");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="max-w-7xl mx-auto p-4 my-16 bg-base-300 rounded-lg"
     >
@@ -14,29 +41,30 @@ const ContactUs = () => {
         <p className="text-2xl"><CiMail/> </p><p>rana.phero@gmail.com</p>
       </div>
       <div className="flex my-auto items-center py-3 gap-4">
-        <p className="text-2xl"><CiPhone/> </p><p>+8801777998855</p>
+        <p className="text-2xl"><CiPhone/> </p><p>+8801700000001</p>
       </div>
       <div className="flex my-auto items-center gap-4">
-        <p className="text-2xl"><CiLocationOn/> </p><p>Los Angeles, USA</p>
+        <p className="text-2xl"><CiLocationOn/> </p><p>Los Dhaka, Bangladesh</p>
       </div>
       
     </div>
     <div className="card md:w-2/5 bg-base-100" data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
     data-aos-duration="1500">
-      <form className="card-body">
+      <form ref={form}
+      onSubmit={sendEmail} className="card-body">
         <div className="form-control">
           <label className="label">
             <span className="label-text font-bold text-2xl">SAY SOMETHING</span>
           </label>
-          <input type="text" placeholder="Enter your name" className="input input-bordered" required />
+          <input type="text" name="to_name" placeholder="Enter your name" className="input input-bordered" required />
         </div>
         <div className="form-control">
-          <input type="email" placeholder="Enter your email" className="input input-bordered" required />
+          <input type="email" name="to_email" placeholder="Enter your email" className="input input-bordered" required />
         </div>
         <textarea className="textarea textarea-bordered" placeholder="Comment"></textarea>
         <div className="flex justify-end">
-          <button className="btn bg-fuchsia-400 text-white w-2/4">Submit</button>
+          <button type="submit" value="Send" className="btn bg-fuchsia-400 text-white w-2/4">Submit</button>
         </div>
       </form>
     </div>

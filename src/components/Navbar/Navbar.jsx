@@ -18,13 +18,19 @@ const Navbar = () => {
     }
 
     const navLinks =<>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/feature'>Featured Games</NavLink></li>
-        <li><NavLink to='/blog'>Blog</NavLink></li>
+        <li>
+          <NavLink className="text-white" to='/'>Home</NavLink>
+        </li>
+        <li>
+          <NavLink className="text-white" to='/feature'>Featured Games</NavLink>
+        </li>
+        <li>
+          <NavLink className="text-white" to='/blog'>Blog</NavLink>
+        </li>
         
     </>
     return (
-        <div className="navbar bg-base-100 max-w-7xl mx-auto my-5 shadow-lg rounded-md">
+        <div className="navbar bg-black fixed z-10 top-0 mx-auto bg-opacity-40 shadow-lg rounded-md">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
