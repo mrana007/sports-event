@@ -52,7 +52,7 @@ const Navbar = () => {
         user ?
             <>
             <span className="pr-4"><img className="rounded-full w-11 h-11" src={user.photoURL} alt="" /></span>
-            <span className="pr-4">{user.displayName}</span>
+            <span className="pr-4 text-white">{user.displayName}</span>
             <button onClick={handleLogOut} className="btn btn-secondary md:w-36 text-lg normal-case text-white">Log Out</button>
             </>
             :
